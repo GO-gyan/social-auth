@@ -1,12 +1,19 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import './button.css';
 
-const LinkButton = props => {
-    return(
-        <a className={`btn btn-block btn-lg btn-social ${props.btnType} button-link`}>
-            <span className={`fa ${props.faType}`}></span> {props.btnLabel}
-        </a>
-    );
-};
+class LinkButton extends React.Component {
+    handleClick = event => {
+        console.log(event);
+    }
+    render() {
+        const {btnType, faType, btnLabel} = this.props;
+        return(
+            <Button className={`btn btn-block btn-lg btn-social ${btnType} button-link`} onClick={this.handleClick}>
+                <span className={`fa ${faType}`}></span> {btnLabel}
+            </Button>
+        );
+    }
+}
 
 export default LinkButton;
