@@ -1,0 +1,25 @@
+.form-signin {
+    max-width: 400px;
+    height: 420px;
+    display: block;
+    margin: 0px auto 20px auto;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    border-bottom: 1px #ccc solid;
+    text-align: center;
+}
+
+.form-signin.signIn {
+    height: auto;
+}
+
+.form-signin .social-box {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-signin .heading-desc {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 38px 0px 38px;
+}
